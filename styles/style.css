@@ -53,6 +53,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 700px;
+    margin: auto;
 }
 
 #box1{
@@ -91,6 +92,8 @@ main{
     background-image: url("./wave3-1.jpg");
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #spec_section h1{
@@ -112,10 +115,6 @@ main{
     width: 250px;
     background-color: white;
     border-radius: 7px;
-    background-image: url("./pexels-markus-spiske-3905837\ copy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -45px;
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
@@ -132,6 +131,27 @@ main{
 .card_text h3,p{
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+#first{
+    background-image: url("./pexels-markus-spiske-3905837\ copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -55px;
+}
+
+#second{
+    background-image: url("./pexels-pixabay-414781\ copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -45px;
+}
+
+#third{
+    background-image: url("./pexels-skitterphoto-9340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -45px;
 }
 
 #coming_soon{
@@ -197,4 +217,68 @@ main{
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 1010px) {
+    #box2 img{
+        height: 350px;
+        width: 350px;
+        margin-top: 100px;
+    }
+    #card_body{
+        flex-direction: column;
+        margin-top: 0;
+        margin: auto;
+    }
+    .cards{
+        width: 500px;
+        height: 280px;
+        margin-bottom: 40px;
+    }
+    .card_text{
+        width: 500px;
+        height: 100px;
+    }
+    #spec_section{
+        height: 1200px;
+    }
+    
+  }
 
+  @media only screen and (max-width: 880px){
+      #box1 h1{
+          font-size: 45px;
+      }
+
+      #box3_content{
+          width: 240px;
+      }
+
+      #box3_content h1{
+          font-size: 30px;
+      }
+  }
+
+  @media only screen and (max-width: 750px){
+    #box3_content h1{
+        font-size: 23px;
+    }
+
+    #box3_content{
+        width: 240px;
+        margin-top: 350px;
+    }
+
+    #box1 h1{
+        font-size: 35px;
+    }
+
+    #box2 img{
+        height: 300px;
+        width: 300px;
+        margin-top: 150px;
+    }
+
+    #main-area{
+        width: 650px;
+    }
+
+  }
