@@ -108,6 +108,7 @@ main{
     justify-content: space-evenly;
     margin-top: 50px;
     margin: auto;
+    width: 100%;
 }
 
 .cards{
@@ -225,8 +226,8 @@ main{
     }
     #card_body{
         flex-direction: column;
-        
         margin-top: 0;
+        align-items: center;
     }
     .cards{
         width: 500px;
